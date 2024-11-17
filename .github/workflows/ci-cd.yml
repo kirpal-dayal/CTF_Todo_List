@@ -32,7 +32,6 @@ jobs:
         docker build -t your-dockerhub-username/user-service ./user-service
         docker build -t your-dockerhub-username/collaboration-service ./collaboration-service
         docker build -t your-dockerhub-username/notification-service ./notification-service
-        
         docker push your-dockerhub-username/task-service
         docker push your-dockerhub-username/user-service
         docker push your-dockerhub-username/collaboration-service
