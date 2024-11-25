@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "../utils/api";
+import "./styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +10,7 @@ const RegisterForm = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e) => { 
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
